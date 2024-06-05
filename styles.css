@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4CAF50, #008CBA);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    position: fixed; /* Hace que el encabezado esté fijo */
+    top: 0; /* Coloca el encabezado en la parte superior */
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    margin-top: 100px; /* Ajusta el espacio entre el encabezado y la tarjeta */
+    margin-bottom: 14%;
+}
+
+.card-header {
+    background: #00b894;
+    height: 100px;
+    position: relative;
+}
+
+.avatar {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+}
+
+.avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-body h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    justify-items: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #ccc;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
